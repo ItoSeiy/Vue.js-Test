@@ -9,18 +9,22 @@
     <title>Vue.js-Test</title>
 </head>
 <body>
+    <!-- マスタッシュ構文 {{}} -->
     <div id="counter">カウンター : {{ counter }}</div>
 
     <div id="attribute-bindid">
+        <p></p>
         <span v-text="message"></span>
     </div>
 
     <div id="event-handling">
+        <p></p>
         <p>{{message}}</p>
         <button v-on:click="reverseMessage">文字を反転する</button>
     </div>
 
     <div id="two-way-binding">
+        <p></p>
         <p>{{ message }}</p>
         <input type="text" v-model="message">
     </div>
@@ -29,6 +33,13 @@
         <p></p>
         <span v-if="isShow">表示されている</span>
         <button type="button" v-on:click="change">表示非表示切り替え</button>
+    </div>
+
+    <div id="list-rendering">
+        <p></p>
+        <ul>
+            <li v-for="todo in todos">{{ todo.id }} : {{ todo.text }}</li>
+        </ul>
     </div>
 </body>
 </html>

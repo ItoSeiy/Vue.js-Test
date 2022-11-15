@@ -1,3 +1,4 @@
+// マスタッシュ構文
 const Counter = {
     data() {
         return {
@@ -12,6 +13,7 @@ const Counter = {
 };
 Vue.createApp(Counter).mount("#counter");
 
+// v-text ディレクティブ
 const AttributeBindid = {
     data() {
         return {
@@ -21,6 +23,7 @@ const AttributeBindid = {
 };
 Vue.createApp(AttributeBindid).mount("#attribute-bindid");
 
+// v-on:click ディレクティブ
 const EventHandling = {
     data(){
         return {
@@ -35,6 +38,7 @@ const EventHandling = {
 }
 Vue.createApp(EventHandling).mount("#event-handling");
 
+// v-on:click ディレクティブ
 const TwoWayBinding = {
     data(){
         return {
@@ -44,6 +48,7 @@ const TwoWayBinding = {
 }
 Vue.createApp(TwoWayBinding).mount("#two-way-binding");
 
+// v-if ディレクティブ
 const ConditionalRendering = {
     data() {
         return {
@@ -57,3 +62,17 @@ const ConditionalRendering = {
     }
 }
 Vue.createApp(ConditionalRendering).mount("#conditional-rendering");
+
+const ListRendering = {
+    data() {
+        return {
+            todos: [
+                { id: 1, text: "HTMLを学ぶ"},
+                { id: 2, text: "CSSを学ぶ"},
+                { id: 3, text: "JSを学ぶ"},
+                { id: 4, text: "Vueを学ぶ"}
+            ]
+        };
+    }
+}
+Vue.createApp(ListRendering).mount("#list-rendering");
