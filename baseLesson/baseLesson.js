@@ -1,4 +1,4 @@
-// マスタッシュ構文
+// マスタッシュ 構文
 const Counter = {
     data() {
         return {
