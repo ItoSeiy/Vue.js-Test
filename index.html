@@ -24,5 +24,11 @@
         <p>{{ message }}</p>
         <input type="text" v-model="message">
     </div>
+
+    <div id="conditional-rendering">
+        <p></p>
+        <span v-if="isShow">表示されている</span>
+        <button type="button" v-on:click="change">表示非表示切り替え</button>
+    </div>
 </body>
 </html>

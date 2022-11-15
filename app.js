@@ -43,3 +43,17 @@ const TwoWayBinding = {
     }
 }
 Vue.createApp(TwoWayBinding).mount("#two-way-binding");
+
+const ConditionalRendering = {
+    data() {
+        return {
+            isShow: true,
+        };
+    },
+    methods: {
+        change() {
+            this.isShow = !this.isShow;
+        }
+    }
+}
+Vue.createApp(ConditionalRendering).mount("#conditional-rendering");
