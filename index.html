@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js" defer></script>
-    <title>Document</title>
+    <title>Vue.js-Test</title>
 </head>
 <body>
     <div id="counter">カウンター : {{ counter }}</div>
+
     <div id="attribute-bindid">
         <span v-text="message"></span>
+    </div>
+
+    <div id="event-handling">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">文字を反転する</button>
     </div>
 </body>
 </html>
