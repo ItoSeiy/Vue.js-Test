@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="baseLesson.js" defer></script>
+    <title>Vue.js-Test</title>
+</head>
+<body>
+    <!-- マスタッシュ構文 {{}} -->
+    <div id="counter">カウンター : {{ counter }}</div>
+
+    <div id="attribute-bindid">
+        <span v-text="message"></span>
+    </div>
+
+    <div id="event-handling">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">文字を反転する</button>
+    </div>
+
+    <div id="two-way-binding">
+        <p></p>
+        <p>{{ message }}</p>
+        <input type="text" v-model="message">
+    </div>
+
+    <div id="conditional-rendering">
+        <p></p>
+        <span v-if="isShow">表示されている</span>
+        <button type="button" v-on:click="change">表示非表示切り替え</button>
+    </div>
+
+    <div id="list-rendering">
+        <p></p>
+        <ul>
+            <li v-for="todo in todos">{{ todo.id }} : {{ todo.text }}</li>
+        </ul>
+    </div>
+</body>
+</html>
