@@ -24,7 +24,7 @@ Vue.createApp(AttributeBindid).mount("#attribute-bindid");
 const EventHandling = {
     data(){
         return {
-            message: "Hello vue.js",
+            message: "Hello Vue.js",
         };
     },
     methods: {
@@ -34,3 +34,12 @@ const EventHandling = {
     }
 }
 Vue.createApp(EventHandling).mount("#event-handling");
+
+const TwoWayBinding = {
+    data(){
+        return {
+            message: "hello Vue!",
+        };
+    }
+}
+Vue.createApp(TwoWayBinding).mount("#two-way-binding");

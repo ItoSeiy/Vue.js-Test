@@ -19,5 +19,10 @@
         <p>{{message}}</p>
         <button v-on:click="reverseMessage">文字を反転する</button>
     </div>
+
+    <div id="two-way-binding">
+        <p>{{ message }}</p>
+        <input type="text" v-model="message">
+    </div>
 </body>
 </html>
